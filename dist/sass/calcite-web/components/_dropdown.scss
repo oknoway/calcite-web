@@ -62,7 +62,7 @@
       position: relative;
       &:after {
         @include font-size(-2);
-        @extend %icon-font-after;
+        @include icon-font-after;
         @extend .icon-ui-down:before;
         position: absolute;
         right: .35rem;

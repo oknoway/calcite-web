@@ -28,18 +28,14 @@
   }
 }
 
-%icon-font-styles {
-  @include icon-font-styles();
-}
-
 // when placing an icon after text
-%icon-font-after {
-  @extend %icon-font-styles;
+@mixin icon-font-after {
+  @include icon-font-styles;
   padding-right: 0;
   padding-left: $baseline/3;
 }
 
-%icon-font-flush {
+@mixin icon-font-flush {
   padding-right: 0 !important;
   padding-left:  0 !important;
 }
@@ -204,7 +200,7 @@
 
   .icon-ui-flush:before,
   .icon-ui-flush:after {
-    @extend %icon-font-flush;
+    @include icon-font-flush;
   }
 }
 
@@ -234,4 +230,3 @@
   .svg-icon-gray       { fill: $gray;}
   .svg-icon-red        { fill: $red;}
 }
-

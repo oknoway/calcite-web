@@ -34,7 +34,7 @@
     @if $include-svg-icon == false {
       &:before {
         font-size: modular-scale(-3);
-        @extend %icon-font-styles;
+        @include icon-font-styles;
         @extend .icon-ui-right:before;
       }
     }
