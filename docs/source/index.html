@@ -34,6 +34,15 @@ layout: layouts/_layout
            {{data.release}}
           </tr>
           <tr class="trailer-0">
+           <td><b>Selectors</b></td>
+           <td class="text-right">{{data.stats.selectors.total}}</td>
+          </tr>
+          <tr class="trailer-0">
+           <td><b>Rules</b></td>
+           <td class="text-right">{{data.stats.rules.total}}</td>
+           {{data.release}}
+          </tr>
+          <tr class="trailer-0">
            <td><b>Last Update</b></td>
            <td class="text-right">{{data.repo.pushed_at}}</td>
           </tr>

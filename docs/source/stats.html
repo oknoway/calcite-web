@@ -1,0 +1,25 @@
+---
+title: Calcite Web
+description: Quickly build beautiful, consistent websites with the Calcite Web Framework
+layout: layouts/_stats
+section: stats
+css:
+- stats
+---
+{% block content %}
+<div class="grid-container leader-1">
+  <main class="column-24 tablet-leader-1" role="main">
+    <dl class="code-face">
+      <dt>Size</dt>
+      <dd>{{data.stats.humanizedSize}}</dd>
+      <dt>Size (Gzipped)</dt>
+      <dd>{{data.stats.humanizedGzipSize}}</dd>
+      <dt>Rules</dt>
+      <dd>{{data.stats.rules.total}}</dd>
+      <dt>Selectors</dt>
+      <dd>{{data.stats.selectors.total}}</dd>
+    </dl>
+    <code><pre>{{data.stats | stringify}}</pre></code>
+  </main>
+</div>
+{% endblock %}
