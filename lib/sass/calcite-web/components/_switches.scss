@@ -189,10 +189,24 @@ $handle-destructive-checked-border-color: $Calcite_Red_a250;
   }
 }
 
+@mixin toggle-switch-disabled {
+  pointer-events: none;
+  cursor: default;
+
+  .toggle-switch-track {
+    opacity: 0.25;
+  }
+
+  .toggle-switch-label {
+    opacity: 0.5;
+  }
+}
+
 @if $include-switches == true {
   .toggle-switch { @include toggle-switch(); }
   .toggle-switch-input { @include toggle-switch-input(); }
   .toggle-switch-label { @include toggle-switch-label(); }
   .toggle-switch-track { @include toggle-switch-track(); }
   .toggle-switch-destructive { @include toggle-switch-destructive(); }
+  .toggle-switch-disabled { @include toggle-switch-disabled(); }
 }

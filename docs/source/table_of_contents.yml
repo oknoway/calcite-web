@@ -537,6 +537,7 @@ components:
             - toggle-switch
           modifiers:
             - toggle-switch-destructive
+            - toggle-switch-disabled
         - title: 'Checkboxes'
           link: checkboxes
           status: 'complete'
